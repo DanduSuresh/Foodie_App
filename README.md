@@ -122,9 +122,7 @@ src/main/java/com/tap/util/DBConnection.java
 Use Apache Tomcat 9/10
 Deploy project → Run on server → Open:
 
-http://localhost:8080/Foodie/home.jsp
 
-📸 Screenshots (Optional Section)
 
 Add screenshots of UI if you want
 
