@@ -81,6 +81,7 @@ The project includes login, restaurant listing, menu browsing, cart management, 
 
 ## 📞 Contact  
 If you want to connect, feel free to reach out on **LinkedIn**.
+https://www.linkedin.com/in/dandu-suresh/
 
 ---
 
