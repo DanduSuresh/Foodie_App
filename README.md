@@ -1,146 +1,87 @@
 # Foodie_App
 
-🍔 Foodie – Online Food Delivery Web Application
+# 🍔 Foodie – Food Delivery Web Application  
+### Developed by **Suresh**
 
-A Java + JSP + Servlets based food ordering platform
+A complete food delivery web application built using **Java, JSP, Servlets, JDBC, and MySQL**.  
+The project includes login, restaurant listing, menu browsing, cart management, checkout, orders, offers, help page, and full user profile features.
 
-📌 Overview
+---
 
-Foodie is a fully functional food delivery web application built using Java, JSP, Servlets, JDBC, and MySQL.
-The application allows users to register, login, browse restaurants, view menus, add items to cart, place orders, and track past orders.
-Designed with a clean UI inspired by Swiggy/Zomato, the project includes smooth animations, responsive layouts, and reusable components.
+## 🚀 Features
 
-🚀 Features
-🔹 User Features
+### 🔹 Navigation Bar
+- Fully responsive navbar
+- Links for Home, Restaurants, Offers, Help, Profile, Login
 
-User Registration & Login
+### 🔹 Home Page
+- Hero section with search
+- Animated category section
+- Offer banners
+- "Why Choose Us" info
+- App download panel
 
-Profile viewing
+### 🔹 Restaurants Page
+- Restaurant cards with images, cuisine, ratings, delivery info
 
-Browse restaurants with images, ratings, cuisine
+### 🔹 Menu Page
+- List of all food items
+- Add to cart option
+- Quantity update support
 
-Explore category-wise food items
+### 🔹 Cart Page
+- Shows added items
+- Auto price calculation
+- Proceed to checkout button
 
-View menu for each restaurant
+### 🔹 Checkout Page
+- Address input
+- Payment method selection
+- Order placement
 
-Add items to cart
+### 🔹 Order Success Page
+- Confirmation message
+- Link to view order details
 
-Modify cart quantity / remove items
+### 🔹 My Orders Page
+- Lists previously placed orders
+- Shows item-wise price breakdown
 
-Checkout with delivery address + payment method
+### 🔹 Offers Page
+- Real restaurant offers
+- Dummy fallback offers when needed
 
-Order Success Page
+### 🔹 Help Page
+- Customer support and FAQs
 
-View all past orders
+### 🔹 Profile Page
+- Displays user profile data
 
-View order item details
+---
 
-🔹 UI Pages
-Page	Description
-Home Page	Hero section, search, food categories, offers, why-choose-us, app download, footer
-Restaurants Page	List of all restaurants with full card UI
-Menu Page	Menu items for a selected restaurant
-Cart Page	Contains selected items and total amount
-Checkout Page	Delivery address + payment
-Order Success Page	Confirmation message
-My Orders Page	List of all previous orders
-Order Items Page	Items inside each order
-Profile Page	View logged-in user info
-Login & Registration Pages	Secure authentication
-🏗️ Tech Stack
-Frontend
+## 🛠️ Technologies Used
+- **Java**
+- **JSP + Servlets**
+- **JDBC**
+- **MySQL**
+- **HTML, CSS, JS**
+- **Tomcat Server**
 
-HTML
+---
 
-CSS (Fully responsive + animations)
+## 📌 How to Run
+1. Clone repository  
+2. Import project into Eclipse/IntelliJ  
+3. Configure Tomcat  
+4. Set up MySQL database  
+5. Run application on server  
+6. Open browser → `http://localhost:8080/Foodie`
 
-JSP
+---
 
-Custom UI components (NavBar, Cards, Categories, Footer)
+## 📞 Contact  
+If you want to connect, feel free to reach out on **LinkedIn**.
 
-Backend
+---
 
-Java (JDK 17+)
-
-Servlets
-
-DAO Pattern
-
-JDBC for MySQL
-
-Database
-
-MySQL
-
-Tables: user, restaurant, menu, orders, order_items
-
-📂 Project Structure
-Foodie/
-│── src/main/java/com/tap/
-│     ├── servlet/       → All Servlets (Login, Cart, Orders, Profile…)
-│     ├── dao/           → DAO Interfaces
-│     ├── daoImpl/       → DAO Implementations
-│     ├── model/         → POJO Classes
-│     └── util/          → DBConnection
-│
-│── src/main/webapp/
-│     ├── Styles/        → All CSS files
-│     ├── home.jsp
-│     ├── restaurant.jsp
-│     ├── menu.jsp
-│     ├── cart.jsp
-│     ├── checkout.jsp
-│     ├── orderSuccess.jsp
-│     ├── myorders.jsp
-│     ├── orderitems.jsp
-│     ├── profile.jsp
-│     ├── login.jsp
-│     └── registration.jsp
-│
-└── README.md
-
-⚙️ How to Run
-1️⃣ Import Project
-
-Open Eclipse / IntelliJ / VS Code
-
-Import as Maven Project
-
-2️⃣ Configure Database
-
-Create MySQL schema:
-
-CREATE DATABASE food_delivery;
-
-
-Update your DB credentials in:
-
-src/main/java/com/tap/util/DBConnection.java
-
-3️⃣ Run on Server
-
-Use Apache Tomcat 9/10
-Deploy project → Run on server → Open:
-
-
-
-Add screenshots of UI if you want
-
-✨ Future Enhancements
-
-Add online payment gateway
-
-Add admin dashboard
-
-Real-time order tracking
-
-Restaurant admin panel
-
-Offers & coupons system
-
-👨‍💻 Author
-
-Suresh Dandu
-📍 Andhra Pradesh, India
-💼 Java Developer | Full-Stack Enthusiast
-🔗 LinkedIn: https://www.linkedin.com/in/dandu-suresh/
+### ⭐ If you like this project, don’t forget to star the repo!
