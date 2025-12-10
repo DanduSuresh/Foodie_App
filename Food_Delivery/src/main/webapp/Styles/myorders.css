@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: #fafafa;
+}
+
+/* 🔶 NAVBAR */
+.main-nav {
+	width: 100%;
+	background: #ff5722;
+	padding: 15px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.logo {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	gap: 22px;
+}
+
+.main-nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.nav-btn {
+	background: white;
+	padding: 8px 16px;
+	border-radius: 6px;
+	color: #ff5722;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.section-title {
+	text-align: center;
+	font-size: 32px;
+	margin: 40px 0 8px;
+	font-weight: 700;
+	color: #ff5722;
+}
+
+.section-subtitle {
+	text-align: center;
+	color: #777;
+	margin-bottom: 25px;
+}
+
+/* 🧾 ORDER CARD */
+.orders-container {
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.order-card {
+	background: white;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.order-card h3 {
+	color: #333;
+	font-weight: 700;
+}
+
+.order-card p {
+	color: #777;
+	margin: 6px 0 20px;
+	font-size: 15px;
+}
+
+/* 🚚 STATUS STEPS */
+.status-list .step {
+	width: 100%;
+	padding: 12px;
+	background: #eee;
+	margin: 8px 0;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.status-list .active {
+	background: #ff5722;
+	color: white;
+}
+
+/* FOOTER */
+footer {
+	margin-top: 40px;
+	padding: 22px;
+	background: #333;
+	color: white;
+	text-align: center;
+}
+
+/* 📱 Responsive */
+@media ( max-width : 850px) {
+	.main-nav ul {
+		display: none;
+	}
+}

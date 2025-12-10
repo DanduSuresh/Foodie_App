@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import url("restaurants.css");
+
+.add-btn {
+	background: white;
+	padding: 8px 16px;
+	border-radius: 6px;
+	color: #ff5722;
+	font-weight: 600;
+	text-decoration: none;
+}

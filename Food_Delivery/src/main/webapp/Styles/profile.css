@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Import all navbar + global + layout styles from restaurants.css */
+@import url("restaurants.css");
+
+/* ---------- PROFILE PAGE CUSTOM STYLES ---------- */
+
+.profile-container {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.profile-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: white;
+  width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+  font-size: 17px;
+}
+
+.profile-card p {
+  margin: 12px 0;
+  font-size: 17px;
+  color: #444;
+}
+
+.profile-card strong {
+  color: #ff5722;
+}

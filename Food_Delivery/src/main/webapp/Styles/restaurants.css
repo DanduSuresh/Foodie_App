@@ -1,0 +1,272 @@
+/* --------------------------------------------------
+   RESET + GLOBAL
+-------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #fafafa;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------
+   🔶 NAVBAR (Desktop + Mobile)
+-------------------------------------------------- */
+.main-nav {
+  width: 100%;
+  background: #ff5722;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-btn {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #ff5722;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hamburger Icon (Mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #ff5722;
+  padding: 15px;
+  gap: 15px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* --------------------------------------------------
+   🟠 HERO SECTION
+-------------------------------------------------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px;
+  background: white;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #ff5722;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 17px;
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.hero-image img {
+  width: 380px;
+  border-radius: 8px;
+}
+
+/* --------------------------------------------------
+   🍽 RESTAURANTS LISTING
+-------------------------------------------------- */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 40px 0 10px;
+  font-weight: 700;
+  color: #ff5722;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.restaurant-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.restaurant-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  animation: fadeIn 0.4s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-card h3 {
+  margin-top: 12px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 850;
+}
+
+.restaurant-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.rating {
+  background: #ff9800;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* --------------------------------------------------
+   FOOTER (Always at Bottom)
+-------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #333;
+  color: white;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* --------------------------------------------------
+   ANIMATIONS
+-------------------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------------------------------
+   📱 MOBILE RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 850px) {
+
+  /* Hide desktop menu */
+  .main-nav ul {
+    display: none;
+  }
+
+  /* show hamburger */
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  /* hero */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+
+}
+
+/* Extra small screens */
+@media (max-width: 500px) {
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card img {
+    height: 150px;
+  }
+}
