@@ -4,7 +4,11 @@
 ### Developed by **Suresh**
 
 A complete food delivery web application built using **Java, JSP, Servlets, JDBC, and MySQL**.  
-The project includes login, restaurant listing, menu browsing, cart management, checkout, orders, offers, help page, and full user profile features.
+The project includes login, restaurant listing, menu browsing, cart management, checkout, orders, offers, help page
+
+https://github.com/user-attachments/assets/0392d98d-6563-49e8-bb45-936cb99452c5
+
+, and full user profile features.
 
 ---
 
